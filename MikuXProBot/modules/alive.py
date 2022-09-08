@@ -56,7 +56,7 @@ async def hmm(yes):
     Miku += f"♡ **Telethon Version** ~♪ `{version.__version__}`\n\n"
     Miku += f"♡ **Python Telegram Bot Version** ~♪ `{telegram.__version__}`\n\n"
     Miku += f"♡ **Pyrogram Version** ~♪ `{pyro}`\n\n"
-    Miku += f"♡ **My Master** ~♪ [{OWNER_NAME}](tg://user?id={OWNER_ID})\n\n"
+    Miku += f"♡ **My Master** ~♪ [{Miku}](tg://user?id={5531407664})\n\n"
     Miku += f"Thanks For Adding Me In {yes.chat.title}"
     BUTTON = [[Button.url("Support Chat", "https://t.me/MikusSupport"), Button.url("Updates Channel", "https://t.me/Pegasusupdates")]]
     on = await borg.send_file(yes.chat_id, file=file2,caption=Miku, buttons=BUTTON)
@@ -85,5 +85,5 @@ async def hmm(yes):
 @register(pattern=("/repo"))
 async def repo(event):
     Miku = f"**Hey [{event.sender.first_name}](tg://user?id={event.sender.id}), Click The Button Below To Get My Repo**\n\n"
-    BUTTON = [[Button.url("[► Support ◄]", "https://t.me/MikusSupport"), Button.url("[► Repo ◄]", "https://github.com/h0daka/Miku-Nakano")]]
+    BUTTON = [[Button.url("[► Support ◄]", "https://t.me/Miku_x_Support"), Button.url("[► Repo ◄]", "https://github.com/")]]
     await borg.send_file(event.chat_id, file="https://telegra.ph/file/c5b6c0a3a6832efc08e5b.jpg", caption=Miku, buttons=BUTTON)
