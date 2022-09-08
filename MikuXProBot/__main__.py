@@ -435,7 +435,7 @@ def about_callback_data(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="❌ Back", callback_data="miku_")
+                    InlineKeyboardButton(text="Back", callback_data="miku_")
                  ],
                 ]
             ),
@@ -453,7 +453,7 @@ def about_callback_data(update, context):
                     InlineKeyboardButton(text="🎏 updates", url="t.me/Miku_X_Updates01"),
                  ],
                  [
-                    InlineKeyboardButton(text="❌ Back", callback_data="miku_")
+                    InlineKeyboardButton(text="Back", callback_data="miku_")
                  ],
                 ]
             ),
@@ -475,7 +475,7 @@ def repo_callback_data(update, context):
                     InlineKeyboardButton(text="📢 support", url="t.me/Miku_x_Support"),
                  ],
                  [
-                    InlineKeyboardButton(text="❌ Back", callback_data="miku_")
+                    InlineKeyboardButton(text="Back", callback_data="miku_")
                  ],
                 ]
             ),
@@ -507,7 +507,7 @@ def miku_callback_data(update, context):
                     InlineKeyboardButton(text="🧾 source code", callback_data="repo_"),
                  ],
                  [
-                    InlineKeyboardButton(text="❌ Back", callback_data="miku_back")
+                    InlineKeyboardButton(text="Back", callback_data="miku_back")
                  ],
                 ]
             ),
