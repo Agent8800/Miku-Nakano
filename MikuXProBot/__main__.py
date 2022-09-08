@@ -115,8 +115,10 @@ ABOUT3 = """Hello [{}](tg://user?id={}), My name is *{}*. A Powerful Telegram Gr
             \n\n*If you have any Question, You can join Support Chat. My Developer Team will Answer. Check Support Button Below*"""
 
 HELP_STRINGS = """
-Hey [{}](tg://user?id={}) your *Miku* is here! 
-I Help Admins To Manage Their Groups! 
+Hey there! My Name is Miku Nakano!
+I am an Anime themed group management bot.
+To add me to your group click [HERE](https://t.me/Miku_x_robot?startgroup=true)
+You can find my list of available commands with /help.
 Main commands available :
  ‣ /help: PM's you this message.
  ‣ /privacy: to view the privacy policy, and interact with your data.
