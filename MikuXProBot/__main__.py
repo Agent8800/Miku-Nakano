@@ -63,13 +63,7 @@ def get_readable_time(seconds: int) -> str:
 PM_START_TEXT = """
 ────「 <b>{}</b> 」────
 <b>Hola!</b> <a href="tg://user?id={}"><b>{}</b></a> <b>,
-I'm An Anime Themed Advance Group Management Bot.I have lots of handy features such as:
-‣ Warning system
-‣ Artificial intelligence
-‣ Flood control system
-‣ Note keeping system
-‣ Filters keeping system
-‣ Approvals and much more.</b>
+I'm An Anime Themed Advance Group Management Bot.I have lots of handy features.</b>
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
 ‣ <b>Uptime:</b> <code>{}</code>
 ‣ <b>Python:</b> <code>{}</code>
@@ -81,8 +75,8 @@ I'm An Anime Themed Advance Group Management Bot.I have lots of handy features s
 buttons = [
     [
                         InlineKeyboardButton(
-                             text="🎗️ Summon Me",
-                             url="https://t.me/MikuXProBot?startgroup=true"),
+                             text="Add Miku in Your Group",
+                             url="https://t.me/Miku_x_robot?startgroup=true"),
                     ],
                    [                  
                        InlineKeyboardButton(
@@ -104,10 +98,10 @@ ABOUT2 = """
 
 REPO_TXT = """
 *‣ Dev:*
-• [нσ∂αкα°δ](t.me/h0daka)
+• [Miku](t.me/)
 \n*‣ Note:* 
 • If You're Going To Fork This Repo Then Don't Forget To Give a Star 🌟
-• Report Any Bugs On Source Code At [Support](t.me/Mikuxsupport)
+• Report Any Bugs On Source Code At [Support](t.me/Miku_x_support)
 """
 
 ABOUT3 = """Hello [{}](tg://user?id={}), My name is *{}*. A Powerful Telegram Group Management Bot built to help you manage Group easily.
@@ -318,10 +312,10 @@ def start(update: Update, context: CallbackContext):
                   [                  
                        InlineKeyboardButton(
                              text="🚑 Support",
-                             url="t.me/Mikuxsupport"),
+                             url="t.me/Miku_x_support"),
                        InlineKeyboardButton(
                              text="📢 Updates",
-                             url="t.me/MikuXUpdates")
+                             url="t.me/Miku_X_Updates01")
                      ] 
                 ]
             ),
@@ -388,7 +382,6 @@ def help_button(update, context):
             help_buttons.append(
                 [
                     InlineKeyboardButton(text="Back", callback_data="help_back"),
-                    InlineKeyboardButton(text='Support', url='https://t.me/Mikuxsupport')
                 ]
                     )
             query.message.edit_caption(
@@ -454,8 +447,8 @@ def about_callback_data(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="📢 support", url="t.me/MikuxSupport"),
-                    InlineKeyboardButton(text="🎏 updates", url="t.me/MikuXUpdates"),
+                    InlineKeyboardButton(text="📢 support", url="t.me/Miku_x_Support"),
+                    InlineKeyboardButton(text="🎏 updates", url="t.me/Miku_X_Updates01"),
                  ],
                  [
                     InlineKeyboardButton(text="❌ Back", callback_data="miku_")
@@ -476,8 +469,8 @@ def repo_callback_data(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="🧾 Source Code", url="https://github.com/h0daka/Miku-Nakano"),
-                    InlineKeyboardButton(text="📢 support", url="t.me/MikuxSupport"),
+                    InlineKeyboardButton(text="🧾 Source Code", url="https://github.com/"),
+                    InlineKeyboardButton(text="📢 support", url="t.me/Miku_x_Support"),
                  ],
                  [
                     InlineKeyboardButton(text="❌ Back", callback_data="miku_")
@@ -508,7 +501,7 @@ def miku_callback_data(update, context):
                     InlineKeyboardButton(text="💻 System Stats", callback_data="stats_callback"),
                  ],
                  [
-                    InlineKeyboardButton(text="🎙️ support", callback_data="about_back"),
+                    InlineKeyboardButton(text="💌 support", callback_data="about_back"),
                     InlineKeyboardButton(text="🧾 source code", callback_data="repo_"),
                  ],
                  [
@@ -568,7 +561,7 @@ def get_help(update: Update, context: CallbackContext):
             reply_markup=InlineKeyboardMarkup(
                 [
                   [
-                  InlineKeyboardButton(text=" Click here", url="https://t.me/MikuXProBot?start=help")
+                  InlineKeyboardButton(text=" Click here", url="https://t.me/Miku_x_robot?start=help")
                   ]
                 ]
             ),
